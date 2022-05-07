@@ -10,6 +10,7 @@
 
 @interface XDElevatorObject : NSObject
 
-- (NSString *)getName;
+- (NSString *)getVersion;
+- (NSString *)getName:(NSString*)arg;
 
 @end

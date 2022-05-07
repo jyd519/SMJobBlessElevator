@@ -17,34 +17,47 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+  XDElevatorObject* obj = [self getElevatorObject];
+  if (!obj) {
+    [self installHelper];
+  }
+  NSString* version = [obj getVersion];
+  if (![version isEqualToString:@"1.5"]) {
+     [self installHelper];
+     obj = [self getElevatorObject];
+  }
+  NSString* name = [obj getName:@"????"];
+  [self showMessage:[NSString stringWithFormat:@"Got name from DO: %@", name]];
+}
+
+- (XDElevatorObject*) getElevatorObject
+{
+  NSConnection *c = [NSConnection connectionWithRegisteredName:@"com.xdissent.ElevatorDOHelper.mach" host:nil];
+  if (c == nil) {
+    return nil;
+  }
+  
+  XDElevatorObject *proxy = (XDElevatorObject *)[c rootProxy];
+  return proxy;
+}
+
+- (bool) installHelper
+{
     // Get authorization
     AuthorizationRef authRef = [self createAuthRef];
     if (authRef == NULL) {
         [self showMessage:@"Authorization failed"];
-        return;
+        return false;
     }
     
     // Bless Helper
     NSError *error = nil;
     if (![self blessHelperWithLabel:@"com.xdissent.ElevatorDOHelper" withAuthRef:authRef error:&error]) {
         [self showMessage:@"Failed to bless helper"];
-        return;
+        return false;
     }
-    
-    // Connect to DO
-    [self showMessage:@"Connecting to DO"];
-    NSConnection *c = [NSConnection connectionWithRegisteredName:@"com.xdissent.ElevatorDOHelper.mach" host:nil]; 
-    XDElevatorObject *proxy = (XDElevatorObject *)[c rootProxy];
-    
-    // Get name from DO
-    NSString *name = [proxy getName];
-    if (name == nil) {
-        [self showMessage:@"Could not get name"];
-        return;
-    }
-    [self showMessage:[NSString stringWithFormat:@"Got name from DO: %@", name]];
+  return true;
 }
-
 - (void)showMessage:(NSString *)msg
 {
     NSLog(@"%@", msg);

@@ -10,9 +10,17 @@
 
 @implementation XDElevatorObject
 
-- (NSString *)getName
+- (NSString *)getVersion
 {
-    return @"xdissent--2.0";
+    NSString* version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    return version;
+}
+
+- (NSString *)getName:(NSString*)arg
+{
+    NSString* name =  @"Elevator ";
+    name = [name stringByAppendingFormat:@"[%@] ", arg];
+    return [name stringByAppendingString:[self getVersion]];
 }
 
 @end

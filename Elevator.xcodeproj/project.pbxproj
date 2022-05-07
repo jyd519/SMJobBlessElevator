@@ -15,10 +15,6 @@
 		AC14350A14E698EF00406CEF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC14350814E698EF00406CEF /* Credits.rtf */; };
 		AC14350D14E698EF00406CEF /* XDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC14350C14E698EF00406CEF /* XDAppDelegate.m */; };
 		AC14351014E698EF00406CEF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC14350E14E698EF00406CEF /* MainMenu.xib */; };
-		AC14351814E698EF00406CEF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC14351714E698EF00406CEF /* SenTestingKit.framework */; };
-		AC14351914E698EF00406CEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1434F914E698EF00406CEF /* Cocoa.framework */; };
-		AC14352114E698EF00406CEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC14351F14E698EF00406CEF /* InfoPlist.strings */; };
-		AC14352414E698EF00406CEF /* ElevatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC14352314E698EF00406CEF /* ElevatorTests.m */; };
 		AC95706414E6A0B600607575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC95706314E6A0B600607575 /* Foundation.framework */; };
 		AC95706714E6A0B600607575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC95706614E6A0B600607575 /* main.m */; };
 		AC95707A14E6AD1700607575 /* com.xdissent.ElevatorDOHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */; };
@@ -26,13 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AC14351A14E698EF00406CEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC1434EC14E698EE00406CEF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC1434F414E698EF00406CEF;
-			remoteInfo = Elevator;
-		};
 		AC95707714E6ACF800607575 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC1434EC14E698EE00406CEF /* Project object */;
@@ -80,12 +69,7 @@
 		AC14350B14E698EF00406CEF /* XDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDAppDelegate.h; sourceTree = "<group>"; };
 		AC14350C14E698EF00406CEF /* XDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDAppDelegate.m; sourceTree = "<group>"; };
 		AC14350F14E698EF00406CEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		AC14351614E698EF00406CEF /* ElevatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC14351714E698EF00406CEF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AC14351E14E698EF00406CEF /* ElevatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ElevatorTests-Info.plist"; sourceTree = "<group>"; };
-		AC14352014E698EF00406CEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AC14352214E698EF00406CEF /* ElevatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElevatorTests.h; sourceTree = "<group>"; };
-		AC14352314E698EF00406CEF /* ElevatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElevatorTests.m; sourceTree = "<group>"; };
 		AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.xdissent.ElevatorDOHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC95706314E6A0B600607575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC95706614E6A0B600607575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,15 +91,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC14351214E698EF00406CEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC14351814E698EF00406CEF /* SenTestingKit.framework in Frameworks */,
-				AC14351914E698EF00406CEF /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC95705E14E6A0B600607575 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				AC1434FF14E698EF00406CEF /* Elevator */,
-				AC14351C14E698EF00406CEF /* ElevatorTests */,
 				AC95706514E6A0B600607575 /* ElevatorDOHelper */,
 				AC1434F814E698EF00406CEF /* Frameworks */,
 				AC1434F614E698EF00406CEF /* Products */,
@@ -142,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				AC1434F514E698EF00406CEF /* Elevator.app */,
-				AC14351614E698EF00406CEF /* ElevatorTests.octest */,
 				AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */,
 			);
 			name = Products;
@@ -194,25 +167,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AC14351C14E698EF00406CEF /* ElevatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC14352214E698EF00406CEF /* ElevatorTests.h */,
-				AC14352314E698EF00406CEF /* ElevatorTests.m */,
-				AC14351D14E698EF00406CEF /* Supporting Files */,
-			);
-			path = ElevatorTests;
-			sourceTree = "<group>";
-		};
-		AC14351D14E698EF00406CEF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AC14351E14E698EF00406CEF /* ElevatorTests-Info.plist */,
-				AC14351F14E698EF00406CEF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		AC95706514E6A0B600607575 /* ElevatorDOHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,25 +209,6 @@
 			productName = Elevator;
 			productReference = AC1434F514E698EF00406CEF /* Elevator.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AC14351514E698EF00406CEF /* ElevatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC14352A14E698EF00406CEF /* Build configuration list for PBXNativeTarget "ElevatorTests" */;
-			buildPhases = (
-				AC14351114E698EF00406CEF /* Sources */,
-				AC14351214E698EF00406CEF /* Frameworks */,
-				AC14351314E698EF00406CEF /* Resources */,
-				AC14351414E698EF00406CEF /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC14351B14E698EF00406CEF /* PBXTargetDependency */,
-			);
-			name = ElevatorTests;
-			productName = ElevatorTests;
-			productReference = AC14351614E698EF00406CEF /* ElevatorTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 		AC95706014E6A0B600607575 /* ElevatorDOHelper */ = {
 			isa = PBXNativeTarget;
@@ -323,7 +258,6 @@
 			projectRoot = "";
 			targets = (
 				AC1434F414E698EF00406CEF /* Elevator */,
-				AC14351514E698EF00406CEF /* ElevatorTests */,
 				AC95706014E6A0B600607575 /* ElevatorDOHelper */,
 			);
 		};
@@ -340,31 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC14351314E698EF00406CEF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC14352114E698EF00406CEF /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AC14351414E698EF00406CEF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC1434F114E698EF00406CEF /* Sources */ = {
@@ -373,14 +283,6 @@
 			files = (
 				AC14350614E698EF00406CEF /* main.m in Sources */,
 				AC14350D14E698EF00406CEF /* XDAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC14351114E698EF00406CEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC14352414E698EF00406CEF /* ElevatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,11 +298,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC14351B14E698EF00406CEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC1434F414E698EF00406CEF /* Elevator */;
-			targetProxy = AC14351A14E698EF00406CEF /* PBXContainerItemProxy */;
-		};
 		AC95707814E6ACF800607575 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC95706014E6A0B600607575 /* ElevatorDOHelper */;
@@ -431,14 +328,6 @@
 				AC14350F14E698EF00406CEF /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		AC14351F14E698EF00406CEF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC14352014E698EF00406CEF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -519,41 +408,16 @@
 			};
 			name = Release;
 		};
-		AC14352B14E698EF00406CEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Elevator.app/Contents/MacOS/Elevator";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Elevator/Elevator-Prefix.pch";
-				INFOPLIST_FILE = "ElevatorTests/ElevatorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		AC14352C14E698EF00406CEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Elevator.app/Contents/MacOS/Elevator";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Elevator/Elevator-Prefix.pch";
-				INFOPLIST_FILE = "ElevatorTests/ElevatorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		AC95706C14E6A0B600607575 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = 83EKM67LLL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ElevatorDOHelper/ElevatorDOHelper-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ElevatorDOHelper/ElevatorDOHelper-Info.plist";
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -573,9 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = 83EKM67LLL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ElevatorDOHelper/ElevatorDOHelper-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ElevatorDOHelper/ElevatorDOHelper-Info.plist";
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -608,15 +475,6 @@
 			buildConfigurations = (
 				AC14352814E698EF00406CEF /* Debug */,
 				AC14352914E698EF00406CEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC14352A14E698EF00406CEF /* Build configuration list for PBXNativeTarget "ElevatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC14352B14E698EF00406CEF /* Debug */,
-				AC14352C14E698EF00406CEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

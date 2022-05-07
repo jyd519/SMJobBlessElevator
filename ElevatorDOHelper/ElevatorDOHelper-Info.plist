@@ -6,10 +6,10 @@
 	<string>com.xdissent.ElevatorDOHelper</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 	<key>CFBundleName</key>
 	<string>ElevatorDOHelper</string>
+	<key>CFBundleVersion</key>
+	<string>1.5</string>
 	<key>SMAuthorizedClients</key>
 	<array>
 		<string>identifier com.xdissent.Elevator and certificate leaf[subject.CN] = &quot;Developer ID Application: ATA Testing Authority (Beijing) Limited (83EKM67LLL)&quot;</string>
