@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0D68E014E69B29006DC48D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0D68DF14E69B29006DC48D /* Security.framework */; };
+		AC0D68E314E69B2F006DC48D /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0D68E214E69B2F006DC48D /* ServiceManagement.framework */; };
 		AC1434FA14E698EF00406CEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1434F914E698EF00406CEF /* Cocoa.framework */; };
 		AC14350414E698EF00406CEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC14350214E698EF00406CEF /* InfoPlist.strings */; };
 		AC14350614E698EF00406CEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC14350514E698EF00406CEF /* main.m */; };
@@ -17,6 +19,10 @@
 		AC14351914E698EF00406CEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1434F914E698EF00406CEF /* Cocoa.framework */; };
 		AC14352114E698EF00406CEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC14351F14E698EF00406CEF /* InfoPlist.strings */; };
 		AC14352414E698EF00406CEF /* ElevatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC14352314E698EF00406CEF /* ElevatorTests.m */; };
+		AC95706414E6A0B600607575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC95706314E6A0B600607575 /* Foundation.framework */; };
+		AC95706714E6A0B600607575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC95706614E6A0B600607575 /* main.m */; };
+		AC95707A14E6AD1700607575 /* com.xdissent.ElevatorDOHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */; };
+		AC95707D14E6BAC400607575 /* XDElevatorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AC95707C14E6BAC400607575 /* XDElevatorObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,28 +33,67 @@
 			remoteGlobalIDString = AC1434F414E698EF00406CEF;
 			remoteInfo = Elevator;
 		};
+		AC95707714E6ACF800607575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC1434EC14E698EE00406CEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC95706014E6A0B600607575;
+			remoteInfo = ElevatorDOHelper;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC95705F14E6A0B600607575 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AC95707914E6AD0000607575 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				AC95707A14E6AD1700607575 /* com.xdissent.ElevatorDOHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AC0D68DF14E69B29006DC48D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AC0D68E214E69B2F006DC48D /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		AC1434F514E698EF00406CEF /* Elevator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elevator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1434F914E698EF00406CEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AC1434FC14E698EF00406CEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AC1434FD14E698EF00406CEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AC1434FE14E698EF00406CEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AC14350114E698EF00406CEF /* Elevator-Info.plist */ = {isa = PBXFileReference; path = "Elevator-Info.plist"; sourceTree = "<group>"; };
+		AC14350114E698EF00406CEF /* Elevator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Elevator-Info.plist"; sourceTree = "<group>"; };
 		AC14350314E698EF00406CEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC14350514E698EF00406CEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AC14350714E698EF00406CEF /* Elevator-Prefix.pch */ = {isa = PBXFileReference; path = "Elevator-Prefix.pch"; sourceTree = "<group>"; };
+		AC14350714E698EF00406CEF /* Elevator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Elevator-Prefix.pch"; sourceTree = "<group>"; };
 		AC14350914E698EF00406CEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		AC14350B14E698EF00406CEF /* XDAppDelegate.h */ = {isa = PBXFileReference; path = XDAppDelegate.h; sourceTree = "<group>"; };
+		AC14350B14E698EF00406CEF /* XDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDAppDelegate.h; sourceTree = "<group>"; };
 		AC14350C14E698EF00406CEF /* XDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDAppDelegate.m; sourceTree = "<group>"; };
 		AC14350F14E698EF00406CEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AC14351614E698EF00406CEF /* ElevatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC14351714E698EF00406CEF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AC14351E14E698EF00406CEF /* ElevatorTests-Info.plist */ = {isa = PBXFileReference; path = "ElevatorTests-Info.plist"; sourceTree = "<group>"; };
+		AC14351E14E698EF00406CEF /* ElevatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ElevatorTests-Info.plist"; sourceTree = "<group>"; };
 		AC14352014E698EF00406CEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AC14352214E698EF00406CEF /* ElevatorTests.h */ = {isa = PBXFileReference; path = ElevatorTests.h; sourceTree = "<group>"; };
+		AC14352214E698EF00406CEF /* ElevatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElevatorTests.h; sourceTree = "<group>"; };
 		AC14352314E698EF00406CEF /* ElevatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElevatorTests.m; sourceTree = "<group>"; };
+		AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.xdissent.ElevatorDOHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC95706314E6A0B600607575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC95706614E6A0B600607575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC95706914E6A0B600607575 /* ElevatorDOHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ElevatorDOHelper-Prefix.pch"; sourceTree = "<group>"; };
+		AC95707514E6A16200607575 /* ElevatorDOHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ElevatorDOHelper-Info.plist"; sourceTree = "<group>"; };
+		AC95707614E6AB9D00607575 /* ElevatorDOHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ElevatorDOHelper-Launchd.plist"; sourceTree = "<group>"; };
+		AC95707B14E6BAC400607575 /* XDElevatorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDElevatorObject.h; sourceTree = "<group>"; };
+		AC95707C14E6BAC400607575 /* XDElevatorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDElevatorObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0D68E314E69B2F006DC48D /* ServiceManagement.framework in Frameworks */,
+				AC0D68E014E69B29006DC48D /* Security.framework in Frameworks */,
 				AC1434FA14E698EF00406CEF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +116,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC95705E14E6A0B600607575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC95706414E6A0B600607575 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +132,7 @@
 			children = (
 				AC1434FF14E698EF00406CEF /* Elevator */,
 				AC14351C14E698EF00406CEF /* ElevatorTests */,
+				AC95706514E6A0B600607575 /* ElevatorDOHelper */,
 				AC1434F814E698EF00406CEF /* Frameworks */,
 				AC1434F614E698EF00406CEF /* Products */,
 			);
@@ -87,6 +143,7 @@
 			children = (
 				AC1434F514E698EF00406CEF /* Elevator.app */,
 				AC14351614E698EF00406CEF /* ElevatorTests.octest */,
+				AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +151,11 @@
 		AC1434F814E698EF00406CEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC0D68E214E69B2F006DC48D /* ServiceManagement.framework */,
+				AC0D68DF14E69B29006DC48D /* Security.framework */,
 				AC1434F914E698EF00406CEF /* Cocoa.framework */,
 				AC14351714E698EF00406CEF /* SenTestingKit.framework */,
+				AC95706314E6A0B600607575 /* Foundation.framework */,
 				AC1434FB14E698EF00406CEF /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -153,6 +213,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AC95706514E6A0B600607575 /* ElevatorDOHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AC95707B14E6BAC400607575 /* XDElevatorObject.h */,
+				AC95707C14E6BAC400607575 /* XDElevatorObject.m */,
+				AC95706614E6A0B600607575 /* main.m */,
+				AC95706814E6A0B600607575 /* Supporting Files */,
+			);
+			path = ElevatorDOHelper;
+			sourceTree = "<group>";
+		};
+		AC95706814E6A0B600607575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC95706914E6A0B600607575 /* ElevatorDOHelper-Prefix.pch */,
+				AC95707514E6A16200607575 /* ElevatorDOHelper-Info.plist */,
+				AC95707614E6AB9D00607575 /* ElevatorDOHelper-Launchd.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,10 +244,12 @@
 				AC1434F114E698EF00406CEF /* Sources */,
 				AC1434F214E698EF00406CEF /* Frameworks */,
 				AC1434F314E698EF00406CEF /* Resources */,
+				AC95707914E6AD0000607575 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC95707814E6ACF800607575 /* PBXTargetDependency */,
 			);
 			name = Elevator;
 			productName = Elevator;
@@ -192,6 +275,23 @@
 			productReference = AC14351614E698EF00406CEF /* ElevatorTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		AC95706014E6A0B600607575 /* ElevatorDOHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC95706E14E6A0B600607575 /* Build configuration list for PBXNativeTarget "ElevatorDOHelper" */;
+			buildPhases = (
+				AC95705D14E6A0B600607575 /* Sources */,
+				AC95705E14E6A0B600607575 /* Frameworks */,
+				AC95705F14E6A0B600607575 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElevatorDOHelper;
+			productName = ElevatorDOHelper;
+			productReference = AC95706114E6A0B600607575 /* com.xdissent.ElevatorDOHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,12 +299,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = xdissent.com;
+				TargetAttributes = {
+					AC1434F414E698EF00406CEF = {
+						DevelopmentTeam = 83EKM67LLL;
+					};
+					AC95706014E6A0B600607575 = {
+						DevelopmentTeam = 83EKM67LLL;
+					};
+				};
 			};
 			buildConfigurationList = AC1434EF14E698EE00406CEF /* Build configuration list for PBXProject "Elevator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AC1434EA14E698EE00406CEF;
@@ -214,6 +324,7 @@
 			targets = (
 				AC1434F414E698EF00406CEF /* Elevator */,
 				AC14351514E698EF00406CEF /* ElevatorTests */,
+				AC95706014E6A0B600607575 /* ElevatorDOHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +384,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC95705D14E6A0B600607575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC95706714E6A0B600607575 /* main.m in Sources */,
+				AC95707D14E6BAC400607575 /* XDElevatorObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -280,6 +400,11 @@
 			isa = PBXTargetDependency;
 			target = AC1434F414E698EF00406CEF /* Elevator */;
 			targetProxy = AC14351A14E698EF00406CEF /* PBXContainerItemProxy */;
+		};
+		AC95707814E6ACF800607575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC95706014E6A0B600607575 /* ElevatorDOHelper */;
+			targetProxy = AC95707714E6ACF800607575 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -369,10 +494,13 @@
 		AC14352814E698EF00406CEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 83EKM67LLL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elevator/Elevator-Prefix.pch";
 				INFOPLIST_FILE = "Elevator/Elevator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -380,10 +508,13 @@
 		AC14352914E698EF00406CEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 83EKM67LLL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elevator/Elevator-Prefix.pch";
 				INFOPLIST_FILE = "Elevator/Elevator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -416,6 +547,50 @@
 			};
 			name = Release;
 		};
+		AC95706C14E6A0B600607575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 83EKM67LLL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElevatorDOHelper/ElevatorDOHelper-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"ElevatorDOHelper/ElevatorDOHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"ElevatorDOHelper/ElevatorDOHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = "com.xdissent.$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		AC95706D14E6A0B600607575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 83EKM67LLL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElevatorDOHelper/ElevatorDOHelper-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"ElevatorDOHelper/ElevatorDOHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"ElevatorDOHelper/ElevatorDOHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = "com.xdissent.$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +610,7 @@
 				AC14352914E698EF00406CEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC14352A14E698EF00406CEF /* Build configuration list for PBXNativeTarget "ElevatorTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +619,16 @@
 				AC14352C14E698EF00406CEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC95706E14E6A0B600607575 /* Build configuration list for PBXNativeTarget "ElevatorDOHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC95706C14E6A0B600607575 /* Debug */,
+				AC95706D14E6A0B600607575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

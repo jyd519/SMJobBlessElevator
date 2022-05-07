@@ -25,10 +25,15 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 __MyCompanyName__. All rights reserved.</string>
+	<string>Copyright © 2012 xdissent.com. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.xdissent.ElevatorDOHelper</key>
+		<string>identifier com.xdissent.ElevatorDOHelper and certificate leaf[subject.CN] = &quot;Developer ID Application: ATA Testing Authority (Beijing) Limited (83EKM67LLL)&quot;</string>
+	</dict>
 </dict>
 </plist>
